@@ -3,8 +3,8 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
 # Test
-- name: 'gcr.io/$PROJECT_ID/ng'
-  args: ['test']
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['test:ci']
 # Build
 - name: 'gcr.io/$PROJECT_ID/ng'
   args: ['build', '--prod']
