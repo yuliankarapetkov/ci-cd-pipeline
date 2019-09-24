@@ -5,7 +5,7 @@ steps:
 # Test
 # - name: 'gcr.io/cloud-builders/npm'
 #   args: ['run', 'test:ci']
-# Build #
+# Build
 - name: 'gcr.io/$PROJECT_ID/ng'
   args: ['build', '--prod']
 # Deploy
